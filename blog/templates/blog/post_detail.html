@@ -1,0 +1,23 @@
+{% extends 'account/base.html' %}
+{% load static %}
+
+
+{% block body %}
+<div class="wrapper-detail">
+    <div class="section-heading">
+        <h1>{{ object.title }} <small>written by: </small><span>{{ object.author }}</span></h1>
+        <p class="subheading">{{ object.date_posted | date:'Y-m-d P'}}</p>
+    </div>
+    <ul class="aboutul">
+        <li> <i class="fa fa-check"></i> {{ object.content }}</li>
+    </ul>
+    <hr>
+    <form class="detail-form" action="{% url 'post-update' post.id %}">
+        <button type="submit" class="btn btn-success btn-lg slide">Update</button>
+    </form>
+    <form class="detail-form" action="{% url 'post-delete' object.id %}">
+        <button type="submit" class="btn btn-danger btn-lg slide">Delete</button>
+    </form>
+</div>
+
+{% endblock body %}
