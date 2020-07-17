@@ -7483,9 +7483,9 @@ body #features-page .subsection4 .ribbon {
 	overflow: hidden;
 	z-index: 10;
 }
-body #features-page .subsection4 .recommended {
-	background: url(../img/recommended.png) 0 0 no-repeat;
-}
+/* body #features-page .subsection4 .recommended {
+	 background: url(../img/recommended.png) 0 0 no-repeat; 
+} */
 body #features-page .subsection4 .featured-ribbon {
 	width: 220px;
 	background: #34363e;
