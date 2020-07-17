@@ -27,6 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
+import django_heroku
 django_heroku.settings(locals())
 
 # Application definition
