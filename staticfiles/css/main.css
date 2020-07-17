@@ -5798,7 +5798,6 @@ th.visible-print, td.visible-print {
 	display: none !important;
 }
 }
-/* @import "_skin"; */
 body {
 	background-color: #fff;
 	font-family: Segoe UI, Arial, Sans-Serif !important;
