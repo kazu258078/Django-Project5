@@ -27,8 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
-import django_heroku
-django_heroku.settings(locals())
+
 
 # Application definition
 #上から読まれていく
@@ -140,3 +139,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
+
+
+import django_heroku
+django_heroku.settings(locals())
